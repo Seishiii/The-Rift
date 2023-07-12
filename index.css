@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Brawler&family=Merriweather:ital,wght@1,300&display=swap');
+    body{
+      background-image: url("https://wallpaperaccess.com/full/628548.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    p, a{
+      font-family: 'Merriweather', serif;
+      text-align: justify;
+      font-size: 1.3em;
+      color: white;
+    }
+    .col-sm-8{
+      background-image: url("https://e0.pxfuel.com/wallpapers/906/576/desktop-wallpaper-sentinels-of-light-league-of-legends-dark-sentinel.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 55em;
+    }
+    .btn{
+      font-family: 'Alegreya SC', serif;
+    }
+
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 100%}
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }

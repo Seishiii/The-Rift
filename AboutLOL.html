@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>The Rift</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="AboutLOL.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">The Rift</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="AboutLOL.html" style="pointer-events: none">League of Legends</a></li>
+              <li><a href="mechanics.html">Mechanics</a></li>
+              <li><a href="updates.html">Patch Notes</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <div class="col-sm-9 text-left">
+                <h1 id="wLOL">What is League of Legends?</h1>
+                <p>
+                    League of Legends (LoL), commonly referred to as League, is a 2009 multiplayer online battle arena video game developed and published by Riot Games. Inspired
+                    by Defense of the Ancients, a custom map for Warcraft III, Riot's founders sought to develop a stand-alone game in the same genre. Since its release in October
+                    2009, the game has been free-to-play and is monetized through purchasable character customization. The game is available for Microsoft Windows and macOS.<br />
+                    The game is often cited as the world's largest esport, with an international competitive scene composed of 12 leagues. The domestic leagues culminate in the
+                    annual League of Legends World Championship. The 2019 championship had over 100 million unique viewers, peaking at a concurrent viewership of 44 million.
+                    Domestic and international events have been broadcast on livestreaming websites such as Twitch, YouTube, Bilibili, as well as cable television sports channel
+                    ESPN.
+                </p>
+                <hr />
+                <div class="ratio ratio-16x9">
+                  <div class="videos">
+                    <h3>Video Contents</h3>
+                    <div class="vid">
+                      <iframe
+                        width=80% height="400px"
+                        src="https://www.youtube-nocookie.com/embed/xZVab7vuqQU"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <div class="vid">
+                      <iframe
+                        width=80% height="400px"
+                        src="https://www.youtube-nocookie.com/embed/nq6AcK86otc"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <div class="vid">
+                      <iframe
+                        width=80% height="400px"
+                        src="https://www.youtube-nocookie.com/embed/otl8QeiCZD0"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <div class="vid">
+                      <iframe
+                        width=80% height="400px"
+                        src="https://www.youtube-nocookie.com/embed/XCfkuiRpbPU"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span>
+                      <span class="dot" onclick="currentSlide(2)"></span>
+                      <span class="dot" onclick="currentSlide(3)"></span>
+                      <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-sm-3 sidenav">
+                <div class="well">
+                    <img src="https://cdn1.epicgames.com/offer/24b9b5e323bc40eea252a10cdd3b2f10/LOL_2560x1440-98749e0d718e82d27a084941939bc9d3" alt="League of Legends Poster">
+                </div>
+                <div class="well">
+                    <img src="https://dotesports.com/wp-content/uploads/2023/03/League-of-Legends.jpg" alt="League of Legends Poster">
+                </div>
+                <div class="well">
+                    <img src="https://images.prismic.io/play-vs/6c423286e877921fb6659122b16e1845df833e1f_league-of-legends-hero-splash.jpg?auto=compress,format" alt="League of Legends Poster">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+        <p>Copyright © 2023, The Rift. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      //slideshow
+      var sIndex = 1;
+      sSlides(sIndex);
+
+      function plusSlides(n) {
+        sSlides(sIndex += n);
+      }
+
+      function currentSlide(n) {
+        sSlides(sIndex = n);
+      }
+      function sSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("vid");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {sIndex = 1}
+        if (n < 1) {sIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[sIndex-1].style.display = "block";
+        dots[sIndex-1].className += " active";
+      }
+    </script>
+</body>
+</html>

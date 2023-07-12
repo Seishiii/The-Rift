@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Brawler&family=Merriweather:ital,wght@1,300&display=swap');
+    body{
+      background-image: url("https://wallpaperaccess.com/full/628548.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    h3{
+      font-family: 'Alegreya SC', serif;
+    }
+    h4,p, li{
+      font-family: 'Merriweather', serif;
+      text-align: justify;
+      font-size: 1.3em;
+    }
+    .col-sm-9{
+      background-color: white;
+      height: 70em;
+    }
+
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 100%}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: black;
+      height: 100%;
+    }
+
+    .well img{
+      width: 100%;
+      height: 100%;
+    }
+
+    /* slideshow */
+    * {box-sizing:border-box}
+    .videos{
+      width: 80%;
+      height: 550px;
+      background-color: #525252;
+      position: relative;top: 30px;
+      margin: auto;
+      border-radius: 10px;
+    }
+    .videos h3{
+      color: #ededed;
+      font-size: 24px;
+      position: relative;top: 38px;left: 20px;
+      font-weight: bold;
+    }
+    .vid{
+      display: none;
+      position: relative;left: 100px;top: 30px;
+    }
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: #ededed;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      position: relative;top: 40px;
+      transition: background-color 0.6s ease;
+    }
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
